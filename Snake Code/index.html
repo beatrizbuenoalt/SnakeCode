@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Code</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Snake Code</h1>
+        <p>Divirta-se!</p>
+    </header>
+    <div class="container">
+        <div id="score" class="score">Score: 0</div>
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        <div id="gameOver" class="game-over">
+            <p>Game Over!</p>
+            <button onclick="restartGame()">Jogar Novamente</button>
+        </div>
+    </div>
+
+    
+
+  <div id="mobileControls">
+    <button class="controlBtn" onclick="mudarDirecao('cima')">⬆️</button>
+    <div>
+      <button class="controlBtn" onclick="mudarDirecao('esquerda')">⬅️</button>
+      <button class="controlBtn" onclick="mudarDirecao('direita')">➡️</button>
+    </div>
+    <button class="controlBtn" onclick="mudarDirecao('baixo')">⬇️</button>
+  </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
